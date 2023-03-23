@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Manual WEB Fact-e BETA</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/029c4a9356.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Contenedor principal-->
+  <div class="container-fluid ">
+    <!--Barra de Menú -->
+    <div class="row navBarContent shadow container-fluid align-self-center"
+      style="margin-left: 0px; margin-right: 0px;">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container header align-self-center align-self-center">
+          <a class="navbar-brand" href="Index.html">Dispapeles <strong>BETA</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar collapse navbar-collapse justify-content-end me-3 menu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="searchItemNav" class="nav-link searchItem" data-bs-toggle="collapse"
+                  href="#multiCollapseExample1" role="button" aria-expanded="false"
+                  aria-controls="multiCollapseExample1" href="#">
+                  <span class="searchWord">Buscar</span>
+                  <span class="iconSearch">
+                    <i id="iconMenuSearch" class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item menu-selected">
+                <a class="nav-link text-menu-selected" aria-current="page" href="Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Temas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container collapse multi-collapse searchInput align-self-center p-2 mt-2" id="multiCollapseExample1">
+        <input id="input-Search" class="form-control p-2" type="search" placeholder="¿Que estás buscando?"
+          aria-label="Search">
+      </div>
+
+    </div><!-- Termina Barra de Menú-->
+
+    <ul id="box-search">
+      <li><a id="searchTag" href="./crearUsuario.html"><i
+            class="fa-solid fa-magnifying-glass iconContentSearch"></i>Crear y consultar un Usuario desde el portal Fact-E |
+          Usuarios</a></li>
+      <li><a id="searchTag" href="./crearDocsoporte.html"><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como crear un
+          Documento Soporte desde el portal Fact-E | Doc. Soporte</a></li>
+      <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como consultar un
+          Documento en Dynamo DB | Factura Electrónica</a></li>
+      <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como crear</a></li>
+      <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Consultar</a></li>
+    </ul>
+
+
+    <div id="coverContentSearch"></div>
+
+    <div class="containerBlog container-fluid vh-100"> <!--Contendor Blog-->
+      <!--INICIO Banner Principal-->
+      <div class="row container-fluid d-flex bannerCover align-self-center">
+        <div class="containerInfoCover">
+          <h1>¡Encuentra lo que buscas!</h1>
+          <p>Selecciona el tema que requieres buscar</p>
+        </div>
+      </div><!--FIN Banner Principal-->
+
+      <div class=" row containerPost justify-content-center mt-2"> <!--Container Posts-->
+
+        <input type="radio" id="TODOS" name="categories" value="TODOS">
+        <input type="radio" id="Crear" name="categories" value="Crear">
+        <input type="radio" id="Consultar" name="categories" value="Consultar">
+        <input type="radio" id="docSoporte" name="categories" value="docSoporte">
+
+        <div class="container-category">
+          <label for="TODOS">Todos</label>
+          <label for="Crear">Crear</label>
+          <label for="Consultar">Consultar</label>
+          <label for="docSoporte">Doc. Soporte</label>
+        </div>
+
+        <div class="posts col-lg-3 col-sm-12 justify-content-center shadow mt-3 ms-1 me-1" data-category="Crear Consultar">
+
+          <div class="ctn-img"> <!--Contenedor Mini entradas BLOG-->
+            <img src="/Assets/Miniatura2.png" alt="">
+          </div>
+          <h2 id="tituloPost" class="Titulo">Como crear y consultar un Usuario desde el portal Fact-E | Usuarios</h2>
+          <ul class="cnt-post-tag">
+            <li>Usuarios</li>
+            <li>Portal</li>
+            <li>Crear</li>
+          </ul>
+          <a href="./crearUsuario.html" class="btn btnReadMore">Leer más</a>
+
+        </div>
+
+        <div id="tituloPost" class="posts col-lg-3 col-sm-12 justify-content-center shadow mt-3 ms-1 me-1"
+          data-category="docSoporte Crear">
+
+          <div class="ctn-img"> <!--Contenedor Mini entradas BLOG-->
+            <img src="/Assets/Miniatura1.png" alt="">
+          </div>
+          <h2 class="Titulo">Como crear un Documento Soporte desde el portal Fact-E | Doc. Soporte</h2>
+          <ul class="cnt-post-tag">
+            <li>Doc. Soporte</li>
+            <li>Electronico</li>
+            <li>Crear</li>
+          </ul>
+          <a href="./crearDocsoporte.html" class="btn btnReadMore">Leer más</a>
+
+        </div>
+
+        <div id="tituloPost" class="posts col-lg-3 col-sm-12 justify-content-center shadow mt-3 ms-1 me-1"
+          data-category="Consultar">
+
+          <div class="ctn-img"> <!--Contenedor Mini entradas BLOG-->
+            <img src="/Assets/Miniatura3.png" alt="">
+          </div>
+          <h2 class="Titulo">Como consultar un Documento en Dynamo DB | Factura Electrónica</h2>
+          <ul class="cnt-post-tag">
+            <li>Factura</li>
+            <li>Electronica</li>
+            <li>Consulta</li>
+          </ul>
+          <a href="#" class="btn btnReadMore">Leer más</a>
+
+        </div>
+
+      </div><!-- FIN Container Posts-->
+
+      <!-- BOTON IR PARA ARRIBA -->
+      <div id="button-up"><!-- BOTON IR PARA ARRIBA -->
+        <i class="fa-solid fa-angle-up fa-lg" style="color: #ffffff;"></i>
+      </div><!-- FIN BOTON IR PARA ARRIBA -->
+
+    </div><!-- FIN Contendor Blog-->
+
+
+  </div> <!-- FIN Contenedor Principal-->
+  <!--Footer-->
+  <div class="container-footer">
+    <footer>
+      <div class="logo-footer">
+        <img src="./Assets/LogoDispa.png" alt="">
+      </div>
+      <div class="redes-footer">
+        <a href=""><i class="fa-sharp fa-solid fa-globe icon-redes-footer"></i></i></a>
+        <a href=""><i class="fa-solid fa-network-wired icon-redes-footer"></i></a>
+        <a href=""><i class="fa-solid fa-envelope icon-redes-footer"></i></a>
+      </div>
+      <hr>
+      <h4>Manual Web portal Fact-E by QA</h4>
+    </footer>
+  </div><!--FIN Footer-->
+  <script src="./JS/Script.js"></script>
+
+</body>
+
+</html>

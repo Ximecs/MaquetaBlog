@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Manual WEB Fact-e BETA</title>
+    <link rel="stylesheet" href="CSS/estilosArtusuarios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/029c4a9356.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Contenedor principal-->
+    <div class="container-fluid ">
+        <!--Barra de Menú -->
+        <div class="row navBarContent shadow container-fluid align-self-center"
+            style="margin-left: 0px; margin-right: 0px;">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container header align-self-center align-self-center">
+                    <a class="navbar-brand" href="Index.html">Dispapeles <strong>BETA</strong></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar collapse navbar-collapse justify-content-end me-3 menu" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a id="searchItemNav" class="nav-link searchItem" data-bs-toggle="collapse"
+                                    href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseExample1" href="#">
+                                    <span class="searchWord">Buscar</span>
+                                    <span class="iconSearch">
+                                        <i id="iconMenuSearch" class="fa-solid fa-magnifying-glass"
+                                            aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-selected">
+                                <a class="nav-link text-menu-selected" aria-current="page" href="Index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Temas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container collapse multi-collapse searchInput align-self-center p-2 mt-2"
+                id="multiCollapseExample1">
+                <input id="input-Search" class="form-control p-2" type="search" placeholder="¿Que estás buscando?"
+                    aria-label="Search">
+            </div>
+
+        </div><!-- Termina Barra de Menú-->
+
+        <ul id="box-search">
+            <li><a id="searchTag" href="./crearUsuario.html"><i
+                        class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como crear un Usuario desde el portal
+                    Fact-E | Usuarios</a></li>
+            <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como crear y
+                    consultar un
+                    Documento Soporte desde el portal Fact-E | Doc. Soporte</a></li>
+            <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como consultar
+                    un Documento en Dynamo DB | Factura Electrónica</a></li>
+            <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Como crear</a>
+            </li>
+            <li><a id="searchTag" href=""><i class="fa-solid fa-magnifying-glass iconContentSearch"></i>Consultar</a>
+            </li>
+        </ul>
+
+
+        <div id="coverContentSearch"></div>
+
+        <div class="containerBlog container-fluid vh-100"> <!--Contendor Blog-->
+            <!--INICIO Banner Principal-->
+            <div class="row container-fluid d-flex bannerCover align-self-center">
+                <div class="containerInfoCover">
+                    <h1>Usuarios</h1>
+                    <p>Crear Usuario desde el portal Fact-E</p>
+                </div>
+            </div><!--FIN Banner Principal-->
+
+
+            <!--Articulo de usuario-->
+            <div class="container-content">
+                <article>
+                    <h1>Como crear y consultar un usuario desde el portal Fact-E </h1>
+                    <p>Para ejecutar alguna acción en los usuarios, debe dirigirse hacia el menú que se encuentra al
+                        costado izquierdo, dar click en <strong>Menú -> Admon -> Seguridad -> Usuarios.</strong>
+                    </p>
+                    <img src="./Assets/Usuarios/img1.png" alt="Imagen menú"
+                        style="width: 22%; float: left; margin-right: 20px; margin-bottom: 20px;">
+                    <p>En la barra superior, encontrará varias opciones:
+                        <br><img src="./Assets/Usuarios/img2.png" alt="" style="width: 40%;">
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-house-chimney"></i> : Ir al inicio
+                        <br><i class="fa-solid fa-magnifying-glass"></i> : Buscar usuarios
+                        <br><i class="fa-regular fa-file"></i> : Crear usuario
+                        <br><i class="fa-solid fa-pencil"></i> : Editar usuario
+                        <br><i class="fa-solid fa-trash-can"></i> : Borrar usuario
+                    </p>
+                    <h2>Crear usuario</h2>
+                    <p>Para crear el usuario debe seleccionar <i class="fa-regular fa-file"></i>, en el cual aparecerá
+                        un formulario para diligenciar los datos del nuevo usuario, la mayoría de los campos son
+                        obligatorios. Recuerde que la creación de usuarios la debe realizar el usuario con el rol
+                        de <strong>Usuario administrador.</strong></p>
+                    <p>Debe asociar una sucursal, punto de venta y prefijos, para que el usuario pueda crear o consultar
+                        documentos, según
+                        sea el rol.
+                    </p>
+
+
+                    <img src="./Assets/Usuarios/img3.png" alt="">
+                    <p>Dar Click en guardar.</p>
+                    
+                    <h2>Consultar un usuario</h2>
+                    <p>Para consultar un usuario debes dar click en el icono <i
+                            class="fa-solid fa-magnifying-glass"></i>. La busqueda se puede filtar por, nombre de usuario, Rol, Tipo de identificación,
+                        Número de identificación y estado. Diligencia el campo con el cual desea filtrar la busqeda y dar en el botón buscar,
+                    si por el contrario, quiere ver todos los usuarios, dar click unicamente en el botón buscar sin diligenciar ningun campo. 
+                </p><img src="./Assets/Usuarios/img4.png" style="width: 50%;" alt="">
+
+                <h2>Editar usuario</h2>
+                <p>Para editar un usuario se debe buscar el usuario, seleccionarlo y dar click en el icono <i class="fa-solid fa-pencil"></i> 
+                de esta manera aparecerá una ventana similar a la creación del usuario, con los datos del usuario seleccionado, ahí ya podrá modificar los campos requeridos.
+            En esta parte también podrá agregar o eliminar prefijos asociados al usuario. Una vez modificados los campos, dar click en el botón <strong>guardar</strong>.</p>
+                </article>
+
+                <div class="container-aside"><!--Contenedor de Art. Relacionados-->
+                    <aside>
+                        <img src="./Assets/Miniatura1.png" alt="">
+                        <h2>Titulo del articulo</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                        </p>
+                        <a href="#" class="btn btnReadMore">Leer más</a>
+                    </aside>
+
+                    <aside>
+                        <img src="./Assets/Miniatura1.png" alt="">
+                        <h2>Titulo del articulo</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                        </p>
+                        <a href="#" class="btn btnReadMore">Leer más</a>
+                    </aside>
+
+                    <aside>
+                        <img src="./Assets/Miniatura1.png" alt="">
+                        <h2>Titulo del articulo</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                        </p>
+                        <a href="#" class="btn btnReadMore">Leer más</a>
+                    </aside>
+                </div><!--FIN Contenedor de Art. Relacionados-->
+
+
+            </div><!-- FIN Articulo de usuario-->
+            <!-- BOTON IR PARA ARRIBA -->
+            <div id="button-up"><!-- BOTON IR PARA ARRIBA -->
+                <i class="fa-solid fa-angle-up fa-lg" style="color: #ffffff;"></i>
+            </div><!-- FIN BOTON IR PARA ARRIBA -->
+            <!--Footer-->
+            <div class="container-footer">
+                <footer>
+                    <div class="logo-footer">
+                        <img src="./Assets/LogoDispa.png" alt="">
+                    </div>
+                    <div class="redes-footer">
+                        <a href=""><i class="fa-sharp fa-solid fa-globe icon-redes-footer"></i></i></a>
+                        <a href=""><i class="fa-solid fa-network-wired icon-redes-footer"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope icon-redes-footer"></i></a>
+                    </div>
+                    <hr>
+                    <h4>Manual Web portal Fact-E by QA</h4>
+                </footer>
+            </div><!--FIN Footer-->
+        </div><!-- FIN Contendor Blog-->
+
+
+    </div><!-- FIN Contenedor Principal-->
+
+    <script src="./JS/Script.js"></script>
+
+</body>
+
+</html>
